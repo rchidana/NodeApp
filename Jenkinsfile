@@ -4,7 +4,7 @@ node {
     stage('Clone repository') {
         /* Cloning the Repository to our Workspace */
 
-        git branch: 'patch-1', credentialsId: 'irfanansari568', url: 'https://github.com/irfanansari568/nodeapp.git'
+        git branch: 'patch-1', url: 'https://github.com/irfanansari568/nodeapp.git'
 	    
  
     }
