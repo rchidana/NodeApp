@@ -30,7 +30,7 @@ node {
 		def customImage = docker.build(${env.BUILD_ID}")
 
     /* Push the container to the custom Registry */
-    customImage.push("${env.BUILD_NUMBER})
+    customImage.push(${env.BUILD_NUMBER})
           
             } 
                 echo "Trying to Push Docker Build to DockerHub"
