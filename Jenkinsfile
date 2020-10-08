@@ -26,8 +26,8 @@ node {
         /* 
 			You would need to first register with DockerHub before you can push images to your account
 		*/
-        docker.withRegistry('https://registry.hub.docker.com', 'Docker-hub') {
-		def customImage = docker.build("my-image:${env.BUILD_ID}")
+        docker.withRegistry('https://registry.hub.docker.com', 'docker-hub') {
+		def customImage = docker.build(${env.BUILD_ID}")
 
     /* Push the container to the custom Registry */
     customImage.push("${env.BUILD_NUMBER}")
