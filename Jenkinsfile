@@ -27,7 +27,7 @@ node {
 			You would need to first register with DockerHub before you can push images to your account
 		*/
         docker.withRegistry('https://registry.hub.docker.com', 'Docker-hub') {
-		sh "docker push irfanansari568/nodeapp:${env.BUILD_NUMBER}"
+		sh "docker push irfanansari568/nodeapp:latest"
 		
             } 
                 echo "Trying to Push Docker Build to DockerHub"
