@@ -28,7 +28,7 @@ node {
 		*/
         docker.withRegistry('https://registry-1.docker.io/v2/', 'Docker-hub') {
 		sh "docker login docker.io"
-		sh "docker push irfanansari568/nodeapp:latest"
+		sh "docker push ansari02/nodeapp:latest"
 		
             } 
                 echo "Trying to Push Docker Build to DockerHub"
