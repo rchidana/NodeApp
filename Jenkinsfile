@@ -4,7 +4,7 @@ node {
     stage('Clone repository') {
         /* Cloning the Repository to our Workspace */
 
-        git branch: 'patch-1', credentialsId: 'irfanansari568', url: 'https://github.com/irfanansari568/NodeApp.git'
+        git branch: 'patch-1', credentialsId: 'irfanansari568', url: 'https://github.com/irfanansari568/nodeapp.git'
 	    
  
     }
@@ -12,7 +12,7 @@ node {
     stage('Build image') {
         /* This builds the actual image */
 
-        app = docker.build("irfanansari568/NodeApp")
+        app = docker.build("irfanansari568/nodeapp")
     }
 
     stage('Test image') {
